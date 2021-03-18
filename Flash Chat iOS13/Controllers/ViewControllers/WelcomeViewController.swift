@@ -10,13 +10,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    //MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
     
+    //MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
     }
     
 
-}
+}//END OF CLASS

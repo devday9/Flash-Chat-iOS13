@@ -9,11 +9,13 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
+    //MARK: - Outlets
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    //MARK: - Actions
     @IBAction func registerPressed(_ sender: UIButton) {
     }
     
-}
+}//END OF CLASS
