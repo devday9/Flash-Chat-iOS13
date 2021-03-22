@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628190235DF01B00E35CAF /* ChatViewController.swift */; };
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		C32F7B302605077700C12594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C32F7B2F2605077600C12594 /* GoogleService-Info.plist */; };
+		C32F7B4526090EC000C12594 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F7B4426090EC000C12594 /* K.swift */; };
+		C32F7B542609211B00C12594 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F7B532609211B00C12594 /* Message.swift */; };
 		EE1FBC9A68156E4382936DAA /* Pods_Flash_Chat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A126109A7591F81B3100367E /* Pods_Flash_Chat_iOS13.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		A126109A7591F81B3100367E /* Pods_Flash_Chat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEB24848DE8F95826ACBCBC /* Pods-Flash Chat iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.release.xcconfig"; sourceTree = "<group>"; };
 		C32F7B2F2605077600C12594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C32F7B4426090EC000C12594 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		C32F7B532609211B00C12594 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +78,10 @@
 		0B628175235DEE8100E35CAF /* Flash Chat iOS13 */ = {
 			isa = PBXGroup;
 			children = (
-				0B628194235DF03A00E35CAF /* Models */,
+				C32F7B52260920FC00C12594 /* Models */,
 				0B628193235DF03400E35CAF /* Views */,
 				0B628192235DF02000E35CAF /* Controllers */,
+				C32F7B4726090FE200C12594 /* Helpers+Extensions */,
 				C3AB80982603F73E00E0A1C9 /* Resources */,
 			);
 			path = "Flash Chat iOS13";
@@ -99,19 +104,28 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0B628194235DF03A00E35CAF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		2B75D23DAFDBDF9B869DC71B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A126109A7591F81B3100367E /* Pods_Flash_Chat_iOS13.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C32F7B4726090FE200C12594 /* Helpers+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C32F7B4426090EC000C12594 /* K.swift */,
+			);
+			path = "Helpers+Extensions";
+			sourceTree = "<group>";
+		};
+		C32F7B52260920FC00C12594 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C32F7B532609211B00C12594 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C3AB80982603F73E00E0A1C9 /* Resources */ = {
@@ -275,6 +289,8 @@
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
+				C32F7B4526090EC000C12594 /* K.swift in Sources */,
+				C32F7B542609211B00C12594 /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 			);
